@@ -1,0 +1,40 @@
+/* styles.css */
+.theater {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.seat-map {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.seat-section {
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(5, 30px); /* Numero di colonne variabile */
+    margin: 10px;
+}
+
+.seat {
+    width: 30px;
+    height: 30px;
+    background-color: #ddd;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.seat.selected {
+    background-color: #3498db;
+    color: #fff;
+}
+
+.seat.occupied {
+    background-color: #e74c3c;
+    cursor: not-allowed;
+    color: #fff;
+}
